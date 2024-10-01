@@ -1,0 +1,119 @@
+/* Estilo general del documento */
+body {
+    font-family: Arial, sans-serif; /* Tipografía de fuente */
+    line-height: 1.6; /* Espacio entre líneas */
+    background-color: #e0f2e9; /* Fondo verde claro */
+    color: #333; /* Color de texto */
+    margin: 0; /* Eliminar márgenes del body */
+    display: flex;
+    flex-direction: column; /* Layout en columna */
+    min-height: 100vh; /* Altura mínima de toda la página */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 20px; /* Relleno interno */
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y la navegación */
+    align-items: center; /* Alinear el contenido verticalmente */
+}
+
+header .logo {
+    display: flex;
+    align-items: center; /* Alinear logo e h1 verticalmente */
+}
+
+/* Imagen del logo */
+#logo {
+    width: 100px; /* Ancho del logo */
+    height: 100px; /* Alto del logo */
+    border-radius: 50%; /* Redondear la imagen */
+    padding: 20px;
+}
+
+/* Menú de navegación */
+header nav ul {
+    list-style: none; /* Eliminar viñetas */
+    display: flex;
+    margin: 0; /* Eliminar margen de la lista */
+    padding: 0; /* Eliminar padding */
+}
+
+/* Espaciado de los elementos del menú */
+header nav ul li {
+    margin: 0 15px; /* Margen entre los enlaces del menú */
+}
+
+/* Estilos de los enlaces del menú */
+header nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 20px; /* Espacio interno en las secciones */
+    margin: 20px auto; /* Margen superior/inferior y centrado horizontal */
+    background-color: #d2e9d5; /* Fondo verde suave */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 800px; /* Limitar ancho para mejorar la lectura */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo de los títulos de las secciones */
+section h2 {
+    color: #2E7D32; /* Verde oscuro */
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilo de las imágenes dentro de las secciones */
+section img {
+    max-width: 100%; /* Ancho máximo de la imagen según el contenedor */
+    height: auto; /* Mantener proporción de la imagen */
+    margin: 15px 0; /* Espaciado vertical */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centrar las imágenes */
+}
+
+/* Estilo de los párrafos dentro de las secciones */
+section p {
+    margin: 15px 0; /* Espaciado vertical */
+    text-align: justify; /* Justificar el texto */
+}
+
+/* Estilo de las listas */
+section ul {
+    margin: 15px 0; /* Margen en la parte superior e inferior */
+    padding-left: 20px; /* Sangría de las listas */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #388E3C; /* Fondo verde oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 10px 0; /* Espaciado interno */
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Para mantener el footer abajo */
+}
+
+/* Estilo de los íconos de redes sociales */
+footer .social-icons a {
+    margin: 0 10px; /* Espaciado entre íconos */
+    display: inline-block;
+}
+
+/* Ajuste del tamaño de los íconos */
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
