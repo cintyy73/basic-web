@@ -25,13 +25,24 @@ header .logo {
     align-items: center; /* Alinear logo e h1 verticalmente */
 }
 
-/* Imagen del logo */
-#logo {
-    width: 100px; /* Ancho del logo */
-    height: 100px; /* Alto del logo */
-    border-radius: 50%; /* Redondear la imagen */
-    padding: 20px;
+
+.logo-container {
+    width: 150px; /* Tamaño fijo para hacer el contenedor cuadrado */
+    height: 150px; /* Igual que el width para asegurar el contenedor cuadrado */
+    border-radius: 50%; /* Hacer el contenedor redondo */
+    overflow: hidden; /* Ocultar cualquier parte de la imagen que sobrepase el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green; /* Opcional: color de fondo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
+
+#logo {
+    width: 100%; /* Ajustar la imagen al tamaño del contenedor */
+    height: auto; /* Mantener proporciones */
+}
+
 
 /* Menú de navegación */
 header nav ul {
@@ -65,6 +76,7 @@ section {
     border-radius: 8px; /* Bordes redondeados */
     max-width: 800px; /* Limitar ancho para mejorar la lectura */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    min-height: 100vh;
 }
 
 /* Estilo de los títulos de las secciones */
@@ -75,7 +87,8 @@ section h2 {
 
 /* Estilo de las imágenes dentro de las secciones */
 section img {
-    max-width: 100%; /* Ancho máximo de la imagen según el contenedor */
+
+    max-width: 500px; /* Ancho máximo de la imagen según el contenedor */
     height: auto; /* Mantener proporción de la imagen */
     margin: 15px 0; /* Espaciado vertical */
     display: block;
@@ -116,4 +129,7 @@ footer .social-icons a {
 footer .social-icons img {
     width: 30px;
     height: 30px;
+}
+#shadow-host-companion {
+    display: none;
 }
