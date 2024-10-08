@@ -26,8 +26,8 @@ header .logo {
 }
 
 .logo-container {
-  width: 150px; /* Tamaño fijo para hacer el contenedor cuadrado */
-  height: 150px; /* Igual que el width para asegurar el contenedor cuadrado */
+  width: 80px; /* Tamaño fijo para hacer el contenedor cuadrado */
+  height: 80px; /* Igual que el width para asegurar el contenedor cuadrado */
   border-radius: 50%; /* Hacer el contenedor redondo */
   overflow: hidden; /* Ocultar cualquier parte de la imagen que sobrepase el contenedor */
   display: flex;
@@ -35,6 +35,7 @@ header .logo {
   align-items: center;
   background-color: green; /* Opcional: color de fondo */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  margin-right: 10px;
 }
 
 #logo {
@@ -129,4 +130,25 @@ footer .social-icons img {
 }
 #shadow-host-companion {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    width: 50px;
+    height: 50px;
+  }
+  header nav ul {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  section {
+    min-height: 100%;
+  }
 }
